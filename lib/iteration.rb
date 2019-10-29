@@ -1,6 +1,18 @@
-def join_ingredients(src)
+def join_ingredients(array_1)
+  fd2 = []
   inner_array = 0
-  
+  while inner_array < array_1.count do
+    ele_index = 0
+    fd1 = []
+    while ele_index < array_1[inner_array].count do
+      fd1.push(array_1[inner_array][ele_index])
+      ele_index += 1
+    end
+    puts "I like #{fd1[0]} and #{fd1[1]} on my pizza."
+    inner_array += 1
+    
+  end
+ # fd2 << fd1  
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
